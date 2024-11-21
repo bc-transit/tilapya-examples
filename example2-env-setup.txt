@@ -1,6 +1,13 @@
 
 2024-11-19
 
+toc
+    [1] install using pip -e
+    [2] install from pypi
+    [3] install using pip -e and rename folder
+
+
+[1] install using pip -e
 
 (penvtranslink) C:\translink\gtfs-realtime-bindings\python>pip install -e .
 Obtaining file:///C:/translink/gtfs-realtime-bindings/python
@@ -33,7 +40,10 @@ urllib3                2.2.3
 
 
 this does not work. 
-uninstall. and install from pypi
+uninstall.
+
+
+[2] install from pypi
 
 (penvtranslink) C:\translink\gtfs-realtime-bindings\python>pip install gtfs-realtime-bindings
 Collecting gtfs-realtime-bindings
@@ -47,4 +57,25 @@ Installing collected packages: gtfs-realtime-bindings
 Successfully installed gtfs-realtime-bindings-1.0.0
 
 
+[3] install using pip -e and rename folder
+2024-11-20
+
+[3.1] retry install from pypi and uninstall,
+  it's installed these files:
+    c:\penvtranslink\lib\site-packages\google\transit\*
+    c:\penvtranslink\lib\site-packages\gtfs_realtime_bindings-1.0.0-py3.10-nspkg.pth
+    c:\penvtranslink\lib\site-packages\gtfs_realtime_bindings-1.0.0-py3.10.egg-info
+
+  so the problem is that it needs the same parent folder for "google.transit"
+  and for "google.protobuffer"
+
+[3.2] retry install using pip -e, and uninstall,
+  it's installed one link in a file:
+    c:\penvtranslink\lib\site-packages\gtfs-realtime-bindings.egg-link
+
+  so the local google/transit folder is used for "google.transit"
+  thus it could not find the "google.protobuf".
+
+  the solution is to rename the local "google/" to "googlelocal/",
+  and import googlelocal.transit instead of google.transit.
 

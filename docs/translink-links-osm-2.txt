@@ -44,9 +44,14 @@ search translink rttiapi format
    https://github.com/Bre77/ta-gtfsrt/blob/master/bin/gtfsrt.py
 
 
-  
+
 search translink gtfsrt format single bus
 
   https://translink.com.au/about-translink/open-data/gtfs-rt 
 
+
+
+osm tools mentioned on github MobilityData/awesome-transit issue 107
+
+  https://wiki.openstreetmap.org/wiki/AwesomeTransportTools
 
