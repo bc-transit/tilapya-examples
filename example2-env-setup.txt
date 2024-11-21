@@ -69,12 +69,15 @@ Successfully installed gtfs-realtime-bindings-1.0.0
   so the problem is that it needs the same parent folder for "google.transit"
   and for "google.protobuffer"
 
-[3.2] retry install using pip -e, and uninstall,
+[3.2] retry install using "pip -e .", and uninstall,
   it's installed one link in a file:
     c:\penvtranslink\lib\site-packages\gtfs-realtime-bindings.egg-link
 
-  so the local google/transit folder is used for "google.transit"
-  thus it could not find the "google.protobuf".
+  while take out the "-e" it works the same as from pypi.
+  this copies files into site-packate not just a link.
+
+  so when using "-e", the local google/transit folder is used for "google.transit"
+  thus it could not find the "google.protobuf". more like a search path issue.
 
   the solution is to rename the local "google/" to "googlelocal/",
   and import googlelocal.transit instead of google.transit.

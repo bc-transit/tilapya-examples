@@ -13,10 +13,16 @@ pos_url="%s/gtfsposition?apikey=%s" % (base_url, api_key)
 trip_url="%s/gtfsrealtime?apikey=%s" % (base_url, api_key)
 
 feed_url=trip_url
+feed_url=pos_url
 
 feed = gtfs_realtime_pb2.FeedMessage()
 response = requests.get(feed_url)
 feed.ParseFromString(response.content)
+
+if type(response.content) is bytes:
+  log_resp_msg = "response bytes size: %d" % len(response.content)
+else:
+  log_resp_msg = "response not bytes: %s" % str(type(response.content))
 
 entity_count = 0
 for entity in feed.entity:
@@ -24,10 +30,11 @@ for entity in feed.entity:
   if entity.HasField('trip_update'):
     print(entity.trip_update)
 
-print("cntity_count: ", entity_count)
+print("entity_count: ", entity_count)
+print(log_resp_msg)
 
 
-''' 1st entity for: pos_url, count 1094
+''' 1st entity for: pos_url, count 1094, size 100k+
 id: "14121555"
 vehicle {
   trip {
@@ -52,7 +59,7 @@ vehicle {
 }
 '''
 
-''' 1st entity for: trip_url, count 959
+''' 1st entity for: trip_url, count 959, bytes 800k+
 id: "13997563"
 is_deleted: false
 trip_update {
