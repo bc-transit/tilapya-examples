@@ -1,0 +1,59 @@
+
+2024-11-19
+
+
+
+python version: 3.10.8
+
+
+
+(penvtranslink) C:\translink\tilapya>pip install -e .
+Obtaining file:///C:/translink/tilapya
+  Preparing metadata (setup.py) ... done
+Collecting requests<3.0.0,>=2.20.0
+  Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+     ---------------------------------------- 64.9/64.9 kB 3.6 MB/s eta 0:00:00
+Collecting marshmallow<4.0.0,>=3.0.0rc7
+  Downloading marshmallow-3.23.1-py3-none-any.whl (49 kB)
+     ---------------------------------------- 49.5/49.5 kB ? eta 0:00:00
+Collecting pytz
+  Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+     ---------------------------------------- 508.0/508.0 kB 8.0 MB/s eta 0:00:00
+Collecting packaging>=17.0
+  Downloading packaging-24.2-py3-none-any.whl (65 kB)
+     ---------------------------------------- 65.5/65.5 kB 3.5 MB/s eta 0:00:00
+Collecting idna<4,>=2.5
+  Downloading idna-3.10-py3-none-any.whl (70 kB)
+     ---------------------------------------- 70.4/70.4 kB 4.0 MB/s eta 0:00:00
+Collecting certifi>=2017.4.17
+  Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+     ---------------------------------------- 167.3/167.3 kB 10.5 MB/s eta 0:00:00
+Collecting charset-normalizer<4,>=2
+  Downloading charset_normalizer-3.4.0-cp310-cp310-win_amd64.whl (102 kB)
+     ---------------------------------------- 102.2/102.2 kB 6.1 MB/s eta 0:00:00
+Collecting urllib3<3,>=1.21.1
+  Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+     ---------------------------------------- 126.3/126.3 kB 3.7 MB/s eta 0:00:00
+Installing collected packages: pytz, urllib3, packaging, idna, charset-normalizer, certifi, requests, marshmallow, tilapya
+  Running setup.py develop for tilapya
+Successfully installed certifi-2024.8.30 charset-normalizer-3.4.0 idna-3.10 marshmallow-3.23.1 packaging-24.2 pytz-2024.2 requests-2.32.3 tilapya-1.0.0 urllib3-2.2.3
+
+
+
+(penvtranslink) C:\translink\tilapya>pip list
+Package            Version   Editable project location
+------------------ --------- ---------------------------------------
+certifi            2024.8.30
+charset-normalizer 3.4.0
+idna               3.10
+marshmallow        3.23.1
+packaging          24.2
+pip                22.2.2
+pytz               2024.2
+requests           2.32.3
+setuptools         63.2.0
+tilapya            1.0.0     c:\translink\tilapya
+urllib3            2.2.3
+
+
+

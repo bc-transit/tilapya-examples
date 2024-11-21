@@ -1,0 +1,50 @@
+
+2024-11-19
+
+
+(penvtranslink) C:\translink\gtfs-realtime-bindings\python>pip install -e .
+Obtaining file:///C:/translink/gtfs-realtime-bindings/python
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: setuptools in c:\penvtranslink\lib\site-packages (from gtfs-realtime-bindings==1.0.0) (63.2.0)
+Collecting protobuf
+  Downloading protobuf-5.28.3-cp310-abi3-win_amd64.whl (431 kB)
+     ---------------------------------------- 431.5/431.5 kB 4.5 MB/s eta 0:00:00
+Installing collected packages: protobuf, gtfs-realtime-bindings
+  Running setup.py develop for gtfs-realtime-bindings
+Successfully installed gtfs-realtime-bindings-1.0.0 protobuf-5.28.3
+
+
+(penvtranslink) C:\translink\gtfs-realtime-bindings\python>pip list
+Package                Version   Editable project location
+---------------------- --------- -------------------------------------------------------------
+certifi                2024.8.30
+charset-normalizer     3.4.0
+gtfs-realtime-bindings 1.0.0     c:\translink\gtfs-realtime-bindings\python
+idna                   3.10
+marshmallow            3.23.1
+packaging              24.2
+pip                    22.2.2
+protobuf               5.28.3
+pytz                   2024.2
+requests               2.32.3
+setuptools             63.2.0
+tilapya                1.0.0     c:\translink\tilapya
+urllib3                2.2.3
+
+
+this does not work. 
+uninstall. and install from pypi
+
+(penvtranslink) C:\translink\gtfs-realtime-bindings\python>pip install gtfs-realtime-bindings
+Collecting gtfs-realtime-bindings
+  Downloading gtfs-realtime-bindings-1.0.0.tar.gz (6.2 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: setuptools in c:\penvtranslink\lib\site-packages (from gtfs-realtime-bindings) (63.2.0)
+Requirement already satisfied: protobuf in c:\penvtranslink\lib\site-packages (from gtfs-realtime-bindings) (5.28.3)
+Using legacy 'setup.py install' for gtfs-realtime-bindings, since package 'wheel' is not installed.
+Installing collected packages: gtfs-realtime-bindings
+  Running setup.py install for gtfs-realtime-bindings ... done
+Successfully installed gtfs-realtime-bindings-1.0.0
+
+
+
