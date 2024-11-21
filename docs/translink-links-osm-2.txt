@@ -1,0 +1,52 @@
+
+
+2024-11-11
+
+
+search openstreetmap jetpack compose
+
+
+https://utsmannn.github.io/osm-android-compose/getting-started/
+https://github.com/utsmannn/osm-android-compose
+
+
+https://stackoverflow.com/questions/78009286/implementing-openstreetmap-for-android-compose
+
+
+
+
+search translink gtfs example
+
+
+https://stackoverflow.com/questions/27977371/how-do-i-view-and-collect-real-time-gtfs-from-a-feed
+
+
+https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/gtfs/gtfs-realtime
+
+  trip update:     https://gtfsapi.translink.ca/v3/gtfsrealtime?apikey=[ApiKey]
+  position update: https://gtfsapi.translink.ca/v3/gtfsposition?apikey=[ApiKey]
+  service alert:   https://gtfsapi.translink.ca/v3/gtfsalerts?apikey=[ApiKey]
+
+
+
+liveBus: 
+  https://api.translink.ca/rttiapi/v1/buses?apikey="+translinkAPIKey+"&routeNo="+input
+
+
+
+search translink rttiapi format
+
+  https://github.com/Martyr2/TranslinkRTTI/blob/master/TranslinkRTTI.php
+  https://tilapya.readthedocs.io/en/latest/rtti.html
+    https://tilapya.readthedocs.io/en/latest/gtfsrt.html
+    https://github.com/carsonyl/tilapya
+
+   https://github.com/Bre77/ta-gtfsrt/blob/master/bin/gtfsrt.py
+
+
+  
+search translink gtfsrt format single bus
+
+  https://translink.com.au/about-translink/open-data/gtfs-rt 
+
+

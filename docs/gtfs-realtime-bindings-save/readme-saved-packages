@@ -1,0 +1,16 @@
+
+C:\translink\gtfs-realtime-bindings-save>pip download gtfs-realtime-bindings
+Collecting gtfs-realtime-bindings
+  Using cached gtfs-realtime-bindings-1.0.0.tar.gz (6.2 kB)
+  Preparing metadata (setup.py) ... done
+Collecting setuptools
+  Downloading setuptools-75.5.0-py3-none-any.whl (1.2 MB)
+     ---------------------------------------- 1.2/1.2 MB 6.0 MB/s eta 0:00:00
+Collecting protobuf
+  Using cached protobuf-5.28.3-cp310-abi3-win_amd64.whl (431 kB)
+Saved c:\translink\gtfs-realtime-bindings-save\gtfs-realtime-bindings-1.0.0.tar.gz
+Saved c:\translink\gtfs-realtime-bindings-save\protobuf-5.28.3-cp310-abi3-win_amd64.whl
+Saved c:\translink\gtfs-realtime-bindings-save\setuptools-75.5.0-py3-none-any.whl
+Successfully downloaded gtfs-realtime-bindings protobuf setuptools
+
+

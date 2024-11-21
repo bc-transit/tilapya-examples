@@ -1,0 +1,68 @@
+
+2024-11-19
+
+
+translink:
+  trip      https://gtfsapi.translink.ca/v3/gtfsrealtime?apikey=[ApiKey]
+  position  https://gtfsapi.translink.ca/v3/gtfsposition?apikey=[ApiKey]
+  service alerts  https://gtfsapi.translink.ca/v3/gtfsalerts?apikey=[ApiKey]
+
+
+
+github topics translink
+
+  https://github.com/kajgm/transittracker/blob/main/src/transittracker.py
+      ** both translink api and transitapp api
+      ** translink api has a limit of 1000 query per day
+
+
+search on github for repositories: gtfsrealtime
+
+  kurtraschke/wmata-gtfsrealtime
+  GTFS-realtime StopTimeUpdate, VehiclePosition, and Alert feeds for WMATA
+
+  kurtraschke/pvta-gtfsrealtime
+
+  jasikpark/tamu-gtfsrealtime
+  GTFS-Realtime for Texas A&M Spirit Bus API
+
+
+
+search translink gtfsapi.translink.ca/v3/gtfsrealtime example
+
+stackoverflow /78552007/gtfs-realtime-data-is-it-only-in-bulk-i-want-to-look-up-specific-transit-infor
+GTFS Realtime Data: Is it only in bulk? I want to look up specific transit information
+
+  related: 
+  stackoverflow /26892634/splitting-gtfs-transit-data-into-smaller-ones?rq=2
+  splitting gtfs transit data into smaller ones
+
+    ** many relevant related links to SO
+
+    https://github.com/google/transitfeed/blob/master/merge.py
+    python example to do the reverse
+        ** replaced by github.com/MobilityData/gtfs-validator
+
+    OneBusAway GTFS Transformer tool, 
+    http://developer.onebusaway.org/modules/onebusaway-gtfs-modules/1.3.3/onebusaway-gtfs-transformer-cli.html
+
+        ** https://developer.onebusaway.org/
+
+    transitland-lib in golang, 
+    https://github.com/interline-io/transitland-lib
+        see the "transitland extract" command
+
+
+
+search python gtfsrealtime
+
+stackoverflow /60671433/how-to-read-gtfs-real-time-feed-using-python
+    ** gtfs_realtime_pb2 link https://github.com/MobilityData/gtfs-realtime-bindings . code 
+          feed = gtfs_realtime_pb2.FeedMessage()
+          response = requests.get(<url>, allow-redirects = True)
+          feed.ParseFromString(response.content)
+          feed.entity[int]
+
+https://github.com/MobilityData/gtfs-realtime-bindings/blob/master/python/README.md
+  **
+
